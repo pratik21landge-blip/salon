@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MBA Hair Salon & Grooming Co. | Engineered by MBAs, Styled by Masters</title>
+  <meta name="description" content="Inspired by India's viral startup revolution. MBA Hair Salon brings corporate precision, 100% UV-sterilized hygiene, transparent pricing, and zero waiting to grooming.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar" id="announcementBar">
+    <div class="container announcement-content">
+      <span class="announcement-tag">Startup Offer</span>
+      <p>🔥 <strong>Flat 20% OFF</strong> on all Grooming Combos for First-Timers & College Students! Use Code: <strong>MBAPASS</strong></p>
+      <div class="announcement-actions">
+        <a href="#services" class="announcement-link">View Menu & Combos</a>
+        <button class="announcement-close" id="closeAnnouncement" aria-label="Dismiss banner">&times;</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <div class="logo-mark"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div class="logo-text-group">
+          <span class="logo-accent">MBA SALON</span>
+          <span class="logo-sub">HAIR & GROOMING CO.</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">Our Story</a></li>
+          <li><a href="#features" class="nav-link">Why MBA?</a></li>
+          <li><a href="#services" class="nav-link">Menu & Combos</a></li>
+          <li><a href="#transformations" class="nav-link">Transformations</a></li>
+          <li><a href="#team" class="nav-link">Artists</a></li>
+          <li><a href="#franchise" class="nav-link">Franchise</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <button class="btn-ghost" id="openMyAppointmentsBtn" title="View your saved appointments">
+          <i class="fa-regular fa-calendar-check"></i>
+          <span class="btn-text">My Bookings</span>
+          <span class="booking-count-badge" id="bookingCountBadge" style="display: none;">0</span>
+        </button>
+        <button class="btn-primary" id="openBookingModalBtn">
+          <i class="fa-solid fa-bolt"></i>
+          <span>Book a Slot (No Wait)</span>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <div class="logo">
+        <div class="logo-mark"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div class="logo-text-group">
+          <span class="logo-accent">MBA SALON</span>
+          <span class="logo-sub">HAIR & GROOMING CO.</span>
+        </div>
+      </div>
+      <button class="drawer-close" id="drawerClose">&times;</button>
+    </div>
+    <ul class="drawer-links">
+      <li><a href="#about" class="drawer-link">Our Startup Story</a></li>
+      <li><a href="#features" class="drawer-link">Why MBA Salon?</a></li>
+      <li><a href="#services" class="drawer-link">Menu & Pricing</a></li>
+      <li><a href="#transformations" class="drawer-link">Before / After</a></li>
+      <li><a href="#team" class="drawer-link">Master Stylists</a></li>
+      <li><a href="#franchise" class="drawer-link">Franchise Opportunity</a></li>
+      <li><a href="#reviews" class="drawer-link">Client Testimonials</a></li>
+      <li><a href="#contact" class="drawer-link">Store Locations</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <button class="btn-primary w-100" id="drawerBookBtn">Book Appointment</button>
+      <div class="drawer-contact-info">
+        <p><i class="fa-solid fa-phone"></i> +91 98200 44820</p>
+        <p><i class="fa-solid fa-location-dot"></i> Baner High Street, Pune / Koramangala, Bengaluru</p>
+        <p><i class="fa-solid fa-clock"></i> All 7 Days: 8:30 AM – 9:30 PM</p>
+      </div>
+    </div>
+  </div>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-overlay-glow"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fa-solid fa-fire"></i>
+          <span>Inspired by India's Hustle & Entrepreneurial Spirit</span>
+        </div>
+        <h1 class="hero-title">
+          Degree in Business, <em>Masters in Styling</em>
+        </h1>
+        <p class="hero-subtitle">
+          Say goodbye to random wait times, unhygienic towels, and pushy upselling. <strong>MBA Salon</strong> combines corporate SOPs, 100% UV-sterilized single-use tools, honest fixed pricing, and top-tier stylists.
+        </p>
+        
+        <div class="hero-cta-group">
+          <button class="btn-primary btn-lg" id="heroBookBtn">
+            <i class="fa-solid fa-calendar-check"></i>
+            <span>Book Seat In 30 Secs</span>
+          </button>
+          <button class="btn-secondary btn-lg" id="openQuizBtn">
+            <i class="fa-solid fa-calculator"></i>
+            <span>Hair ROI Diagnostic</span>
+          </button>
+        </div>
+
+        <!-- Trust Badges Grid -->
+        <div class="hero-usp-row">
+          <div class="usp-pill"><i class="fa-solid fa-shield-virus"></i> 100% UV Sterilized Tools</div>
+          <div class="usp-pill"><i class="fa-solid fa-stopwatch"></i> Zero Queue Guarantee</div>
+          <div class="usp-pill"><i class="fa-solid fa-tag"></i> No Hidden Surcharges</div>
+          <div class="usp-pill"><i class="fa-solid fa-mug-hot"></i> Free Masala Chai & Wi-Fi</div>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-rating">
+              <span class="stat-num">4.9</span>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <span class="stat-label">42,000+ Happy Customers</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">18+</span>
+            <span class="stat-label">Centres Across Pune & Bengaluru</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Transparent Fixed Rate Cards</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-showcase">
+        <div class="hero-card hero-card-main">
+          <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1000&q=80" alt="MBA Hair Salon Barbershop" class="hero-main-img">
+          
+          <div class="floating-badge top-right">
+            <i class="fa-solid fa-briefcase"></i>
+            <div>
+              <strong>The Boardroom Combo</strong>
+              <span>Haircut + Beard + Scalp Spa (₹599)</span>
+            </div>
+          </div>
+          
+          <div class="floating-badge bottom-left">
+            <div class="badge-icon-circle"><i class="fa-solid fa-mug-saucer"></i></div>
+            <div>
+              <strong>Kadak Masala Chai on House</strong>
+              <span>Sip & relax while you get styled</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick Booking Bar -->
+    <div class="container">
+      <div class="hero-quick-bar">
+        <div class="quick-bar-item">
+          <label><i class="fa-solid fa-scissors"></i> Select Service</label>
+          <select id="heroQuickService">
+            <option value="ceo-combo">The CEO Package (Hair + Beard + Head Spa) - ₹599</option>
+            <option value="precision-cut">The Corporate Fade & Cut - ₹249</option>
+            <option value="d-tan-detox">Appraisal Ready D-Tan + Facial Cleanup - ₹499</option>
+            <option value="balayage-pro">Startup Founder Balayage & Melt - ₹2,499</option>
+            <option value="keratin-shield">Liquid Keratin Straightening - ₹2,999</option>
+            <option value="student-hustle">Campus Hustle Special (With ID) - ₹199</option>
+          </select>
+        </div>
+        <div class="quick-bar-divider"></div>
+        <div class="quick-bar-item">
+          <label><i class="fa-solid fa-location-dot"></i> Select Centre</label>
+          <select id="heroQuickStylist">
+            <option value="any">Nearest Available Centre (Auto-detect)</option>
+            <option value="camille">Baner High Street (Pune)</option>
+            <option value="julian">Wakad Datta Mandir Chowk (Pune)</option>
+            <option value="sophia">Koramangala 5th Block (Bengaluru)</option>
+            <option value="elena">Indiranagar 100ft Rd (Bengaluru)</option>
+          </select>
+        </div>
+        <div class="quick-bar-divider"></div>
+        <div class="quick-bar-item">
+          <label><i class="fa-solid fa-clock"></i> Arrival Window</label>
+          <select id="heroQuickTimeframe">
+            <option value="today">Today (Within 1 Hour)</option>
+            <option value="tomorrow">Tomorrow Morning Slot</option>
+            <option value="weekend">Saturday / Sunday VIP</option>
+          </select>
+        </div>
+        <button class="btn-primary quick-bar-btn" id="heroQuickFindBtn">
+          <span>Lock In Slot</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- MBA Startup Features / Value Props -->
+  <section class="section features-section" id="features">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-tag">BUSINESS LOGIC IN GROOMING</div>
+        <h2 class="section-title">Why an <em>MBA</em> Decided to Open a Salon</h2>
+        <p class="section-subtitle">We applied Six Sigma and lean operations to eliminate everything you hate about regular barbershops.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feat-icon-box"><i class="fa-solid fa-pump-soap"></i></div>
+          <h3>100% Single-Use Disposables</h3>
+          <p>Fresh sealed neck strips, disposable aprons, and fresh sanitized blades unboxed right in front of your eyes.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feat-icon-box"><i class="fa-solid fa-receipt"></i></div>
+          <h3>Standardized Rate Card</h3>
+          <p>No arbitrary pricing based on what shirt you are wearing. Transparent GST invoices sent directly to your WhatsApp.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feat-icon-box"><i class="fa-solid fa-business-time"></i></div>
+          <h3>On-Time Slot Guarantee</h3>
+          <p>If you wait more than 10 minutes past your reserved slot, your next hair wash and head massage is completely on us.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feat-icon-box"><i class="fa-solid fa-ear-deaf"></i></div>
+          <h3>"Zero Pitch" Silent Option</h3>
+          <p>Tired after a long sprint? Select our Silent Cut mode. No forced small talk, no unsolicited product pushes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Founder Story (MBA Reference) -->
+  <section class="section about-section" id="about">
+    <div class="container about-container">
+      <div class="about-gallery">
+        <div class="about-img-box primary">
+          <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=800&q=80" alt="Modern Barber Craftsmanship">
+        </div>
+        <div class="about-img-box secondary">
+          <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=600&q=80" alt="Barber Tools in UV sanitizer">
+        </div>
+        <div class="experience-badge">
+          <span class="badge-num">18+</span>
+          <span class="badge-text">Centres In 2 Years</span>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <div class="section-tag">THE HUSTLE STORY</div>
+        <h2 class="section-title">From P&L Spreadsheets to <em>Precision Fades</em></h2>
+        <p class="about-lead">
+          Just like Pune's famous MBA Bhurji revolutionized street food by bringing standardization, hygiene, and corporate pride to the humble egg cart—we did the same for grooming.
+        </p>
+        <p class="about-desc">
+          After graduating from B-school and grinding in corporate finance for 6 years, our founder Nikhil realized men and women in tech corridors were sick of either paying ₹2,500 at pretentious 5-star hotel salons or dealing with unhygienic local shops with stale towels.
+        </p>
+        <p class="about-desc">
+          MBA Hair Salon was born with one simple thesis: <strong>Five-star hygiene, master-level craftsmanship, zero waiting, and honest street-smart prices.</strong>
+        </p>
+
+        <div class="founder-quote-box">
+          <i class="fa-solid fa-quote-left quote-icon"></i>
+          <p>"A haircut shouldn't feel like a corporate negotiation. You sit in the chair, sip great chai, look sharp, and get back to your hustle."</p>
+          <div class="founder-meta">
+            <strong>Nikhil Sharma</strong>
+            <span>MBA (Finance), Founder & CEO</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services & Combos Menu (The Core MBA Menu) -->
+  <section class="section services-section" id="services">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-tag">POPULAR RATE CARD</div>
+        <h2 class="section-title">Curated Combos & <em>A La Carte</em></h2>
+        <p class="section-subtitle">Clear fixed pricing with taxes included. Every cut includes hot towel refresh and styling wax/oil.</p>
+      </div>
+
+      <!-- Service Category Filter Pills -->
+      <div class="service-filters" id="serviceFilters">
+        <button class="filter-pill active" data-category="all">All Combos (10)</button>
+        <button class="filter-pill" data-category="combos">Signature Combos</button>
+        <button class="filter-pill" data-category="haircut">Hair & Fade</button>
+        <button class="filter-pill" data-category="color">Color & Balayage</button>
+        <button class="filter-pill" data-category="spa">Head Spa & D-Tan</button>
+        <button class="filter-pill" data-category="grooming">Beard & Shave</button>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="services-grid" id="servicesGrid">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+
+      <!-- Student & Corporate Pass Banner -->
+      <div class="services-footer-banner">
+        <div class="banner-text">
+          <div class="badge-campus"><i class="fa-solid fa-graduation-cap"></i> Student & Corporate Discount</div>
+          <h4>Show Your Work / College ID & Save 20%</h4>
+          <p>Infosys, TCS, Wipro, Google, Symbiosis, MIT, or COEP — show your badge at the billing desk to get instant discount.</p>
+        </div>
+        <div class="banner-buttons">
+          <button class="btn-secondary" id="bannerQuizBtn">
+            <i class="fa-solid fa-calculator"></i>
+            Run Hair Diagnostic
+          </button>
+          <button class="btn-primary" id="freeConsultBtn">
+            Claim Corporate Pass
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Transformations (Before / After) -->
+  <section class="section transformations-section" id="transformations">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-tag">REAL CLIENT MAKEOVERS</div>
+        <h2 class="section-title">The Corporate to <em>C-Suite Transformation</em></h2>
+        <p class="section-subtitle">Slide the bar to see how a structured fade and beard line-up sharpens facial symmetry.</p>
+      </div>
+
+      <div class="transform-tabs" id="transformTabs">
+        <button class="transform-tab active" data-transform="balayage">
+          <i class="fa-solid fa-crown"></i>
+          <span>The CEO High Fade & Beard</span>
+        </button>
+        <button class="transform-tab" data-transform="bob">
+          <i class="fa-solid fa-scissors"></i>
+          <span>Textured French Crop</span>
+        </button>
+        <button class="transform-tab" data-transform="keratin">
+          <i class="fa-solid fa-wand-magic"></i>
+          <span>Keratin Frizz Seal</span>
+        </button>
+        <button class="transform-tab" data-transform="brunette">
+          <i class="fa-solid fa-droplet"></i>
+          <span>Espresso Color Melt</span>
+        </button>
+      </div>
+
+      <!-- Before / After Slider -->
+      <div class="comparison-card">
+        <div class="comparison-container" id="comparisonSlider">
+          <img id="afterImage" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=1200&q=80" alt="After Makeover" class="comparison-img after-img">
+          <span class="comparison-label after-label">AFTER (MBA POLISH)</span>
+
+          <div class="before-wrapper" id="beforeWrapper">
+            <img id="beforeImage" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1200&q=80" alt="Before Makeover" class="comparison-img before-img">
+            <span class="comparison-label before-label">BEFORE</span>
+          </div>
+
+          <div class="slider-handle" id="sliderHandle">
+            <div class="handle-line"></div>
+            <div class="handle-circle">
+              <i class="fa-solid fa-arrows-left-right"></i>
+            </div>
+            <div class="handle-line"></div>
+          </div>
+        </div>
+
+        <div class="comparison-details" id="transformationDetails">
+          <div class="details-main">
+            <h3 id="transTitle">The CEO High Fade & Precision Beard Lineup</h3>
+            <p id="transDesc">Removed bulk around jawline, structured low skin taper, and added eucalyptus beard oil steam treatment.</p>
+            <div class="trans-meta">
+              <span><i class="fa-regular fa-clock"></i> <strong>Duration:</strong> 45 Mins</span>
+              <span><i class="fa-solid fa-indian-rupee-sign"></i> <strong>Price:</strong> ₹599</span>
+              <span><i class="fa-solid fa-shield"></i> <strong>Sterilization:</strong> UV Level 3</span>
+            </div>
+          </div>
+          <div class="details-cta">
+            <button class="btn-primary" id="bookTransServiceBtn" data-service="The CEO Package">
+              Book This Cut (₹599)
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Master Stylist Team -->
+  <section class="section team-section" id="team">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-tag">LEAD ARTISANS</div>
+        <h2 class="section-title">Meet Our <em>Master Barbers & Stylists</em></h2>
+        <p class="section-subtitle">Trained with L'Oréal and Tony&Guy academies, with average experience of 8+ years.</p>
+      </div>
+
+      <div class="team-grid">
+        <div class="stylist-card">
+          <div class="stylist-image-box">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=700&q=80" alt="Sameer Khan">
+            <div class="stylist-avail-badge"><i class="fa-solid fa-circle"></i> On Floor Today</div>
+          </div>
+          <div class="stylist-info">
+            <div class="stylist-role">Lead Barber & Fade Specialist</div>
+            <h3 class="stylist-name">Sameer Khan</h3>
+            <p class="stylist-specialty">Mid Fades, Razor Lineups, Beard Reshaping</p>
+            <div class="stylist-actions">
+              <button class="btn-outline-sm book-stylist-btn" data-stylist="Sameer Khan">Book with Sameer</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="stylist-card">
+          <div class="stylist-image-box">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=700&q=80" alt="Pooja Kulkarni">
+            <div class="stylist-avail-badge"><i class="fa-solid fa-circle"></i> Available Tomorrow</div>
+          </div>
+          <div class="stylist-info">
+            <div class="stylist-role">Senior Colorist & Balayage Lead</div>
+            <h3 class="stylist-name">Pooja Kulkarni</h3>
+            <p class="stylist-specialty">Warm Caramel Balayage, Keratin Bond Therapy</p>
+            <div class="stylist-actions">
+              <button class="btn-outline-sm book-stylist-btn" data-stylist="Pooja Kulkarni">Book with Pooja</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="stylist-card">
+          <div class="stylist-image-box">
+            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=700&q=80" alt="Vikram Rao">
+            <div class="stylist-avail-badge"><i class="fa-solid fa-circle"></i> Slots Open</div>
+          </div>
+          <div class="stylist-info">
+            <div class="stylist-role">Head Spa & Scalp Therapist</div>
+            <h3 class="stylist-name">Vikram Rao</h3>
+            <p class="stylist-specialty">Ayurvedic Oil Waterfall, Deep Meridian Massage</p>
+            <div class="stylist-actions">
+              <button class="btn-outline-sm book-stylist-btn" data-stylist="Vikram Rao">Book with Vikram</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="stylist-card">
+          <div class="stylist-image-box">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=700&q=80" alt="Ananya Sen">
+            <div class="stylist-avail-badge"><i class="fa-solid fa-circle"></i> Weekend Specialist</div>
+          </div>
+          <div class="stylist-info">
+            <div class="stylist-role">Texture & Curl Expert</div>
+            <h3 class="stylist-name">Ananya Sen</h3>
+            <p class="stylist-specialty">Curly Dry Cuts, Volume Diffusing, Silk Smoothing</p>
+            <div class="stylist-actions">
+              <button class="btn-outline-sm book-stylist-btn" data-stylist="Ananya Sen">Book with Ananya</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Franchise Section (Iconic MBA Startup trope) -->
+  <section class="section franchise-section" id="franchise">
+    <div class="container">
+      <div class="franchise-box">
+        <div class="franchise-content">
+          <span class="section-tag" style="color: var(--accent-gold);">BE YOUR OWN BOSS</span>
+          <h2 class="franchise-title">Partner with India's Fastest Growing Salon Brand</h2>
+          <p class="franchise-desc">
+            Standardized SOPs, centralized inventory management, digital ERP software, and high customer retention. Start an MBA Salon franchise in your city.
+          </p>
+
+          <div class="franchise-stats">
+            <div class="f-stat">
+              <strong>₹18–25 Lakhs</strong>
+              <span>Initial Capital</span>
+            </div>
+            <div class="f-stat">
+              <strong>12–15 Months</strong>
+              <span>Average Payback</span>
+            </div>
+            <div class="f-stat">
+              <strong>78%</strong>
+              <span>Repeat Client Rate</span>
+            </div>
+          </div>
+
+          <button class="btn-primary" id="openFranchiseBtn">
+            <i class="fa-solid fa-handshake"></i>
+            <span>Request Franchise Deck</span>
+          </button>
+        </div>
+
+        <div class="franchise-image">
+          <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=700&q=80" alt="Franchise Model Salon">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Reviews -->
+  <section class="section reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-tag">VERIFIED GOOGLE REVIEWS</div>
+        <h2 class="section-title">What the <em>Working Professionals</em> Say</h2>
+        <div class="aggregate-rating-badge">
+          <span class="rating-badge-score">4.9 / 5.0</span>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <span class="rating-badge-count">Over 4,800+ Verified Reviews</span>
+        </div>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Rohan Verma">
+            </div>
+            <div class="review-author-meta">
+              <h4>Rohan Verma</h4>
+              <span>Product Lead @ Swiggy</span>
+            </div>
+            <div class="verified-tag"><i class="fa-solid fa-circle-check"></i> Verified</div>
+          </div>
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-quote">
+            "Finally someone solved salon waiting time! I booked an 11:30 AM slot on my phone, reached Baner centre at 11:28, was seated by 11:30. No random aunty cutting in front of me. The ₹599 CEO Combo is insane value."
+          </p>
+          <span class="review-date">Visited Last Week • Baner Centre</span>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80" alt="Sneha Deshmukh">
+            </div>
+            <div class="review-author-meta">
+              <h4>Sneha Deshmukh</h4>
+              <span>Founder @ FinTech Startup</span>
+            </div>
+            <div class="verified-tag"><i class="fa-solid fa-circle-check"></i> Verified</div>
+          </div>
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-quote">
+            "Pooja did my caramel balayage in under 3 hours without burning my scalp or charging ₹8,000 like Mumbai salons. Transparent pricing and clean UV box for every scissor. 10/10 recommendation!"
+          </p>
+          <span class="review-date">Visited 2 Weeks Ago • Wakad Centre</span>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar">
+              <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=150&q=80" alt="Aditya Kulkarni">
+            </div>
+            <div class="review-author-meta">
+              <h4>Aditya Kulkarni</h4>
+              <span>Engineering Manager @ Oracle</span>
+            </div>
+            <div class="verified-tag"><i class="fa-solid fa-circle-check"></i> Verified</div>
+          </div>
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-quote">
+            "The silent appointment option is genius. After staring at Jira tickets all day, having someone just give you an immaculate cut and hot towel massage without asking about your weekend plans is true luxury."
+          </p>
+          <span class="review-date">Visited 3 Days Ago • Koramangala Centre</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & Contact Section -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="contact-card-wrapper">
+        <div class="contact-info-panel">
+          <div class="section-tag">LOCATIONS</div>
+          <h2 class="section-title">Walk Into Any <em>MBA Salon</em></h2>
+          <p class="contact-sub">Available in major tech hubs. Walk-ins welcome based on floor availability; online bookings get priority seating.</p>
+
+          <div class="contact-details-list">
+            <div class="contact-detail-item">
+              <div class="cd-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <strong>Flagship Centres</strong>
+                <p>• Baner High Street, Opposite Westend, Pune<br>• Datta Mandir Chowk, Wakad, Pune<br>• 5th Block, Koramangala, Bengaluru</p>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="cd-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <strong>Central Helpdesk & WhatsApp</strong>
+                <p><a href="tel:+919820044820">+91 98200 44820</a><br><a href="mailto:hustle@mbasalon.in">hustle@mbasalon.in</a></p>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="cd-icon"><i class="fa-solid fa-clock"></i></div>
+              <div>
+                <strong>Operational Hours</strong>
+                <p>Monday – Sunday: 8:30 AM – 9:30 PM (No weekly off)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="status-indicator-box">
+            <span class="live-dot"></span>
+            <span id="salonLiveStatus">Centres Open Today • 100% Seats Sanitized</span>
+          </div>
+        </div>
+
+        <div class="contact-form-panel">
+          <h3 class="form-title">Quick Booking or Query</h3>
+          <p class="form-desc">Need a wedding grooming package or corporate tie-up? Send us a quick note.</p>
+
+          <form id="contactForm" class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contactName">Your Name *</label>
+                <input type="text" id="contactName" required placeholder="Rohan Sharma">
+              </div>
+              <div class="form-group">
+                <label for="contactEmail">WhatsApp Phone *</label>
+                <input type="tel" id="contactPhone" required placeholder="+91 98000 00000">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contactService">Preferred City / Centre</label>
+              <select id="contactService">
+                <option value="baner">Pune - Baner High Street</option>
+                <option value="wakad">Pune - Wakad</option>
+                <option value="koramangala">Bengaluru - Koramangala</option>
+                <option value="indiranagar">Bengaluru - Indiranagar</option>
+                <option value="franchise">Franchise Inquiry</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="contactMessage">Any Specific Request?</label>
+              <textarea id="contactMessage" rows="3" placeholder="Tell us if you want a specific barber, combo, or corporate pass..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary w-100">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>Send WhatsApp Confirmation</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <div class="logo-mark"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="logo-text-group">
+            <span class="logo-accent" style="color:#fff;">MBA SALON</span>
+            <span class="logo-sub">HAIR & GROOMING CO.</span>
+          </div>
+        </a>
+        <p class="brand-bio">
+          Born out of Pune's startup culture. Making everyday grooming clean, reliable, and completely transparent for ambitious India.
+        </p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Top Packages</h5>
+        <ul>
+          <li><a href="#services">The CEO Package (₹599)</a></li>
+          <li><a href="#services">The Appraisal Glow (₹499)</a></li>
+          <li><a href="#services">Founder Balayage (₹2,499)</a></li>
+          <li><a href="#services">Liquid Keratin Shield (₹2,999)</a></li>
+          <li><a href="#services">Campus Student Special (₹199)</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Startup Hub</h5>
+        <ul>
+          <li><a href="#about">The MBA Founder Story</a></li>
+          <li><a href="#features">Six-Sigma Hygiene SOPs</a></li>
+          <li><a href="#franchise">Franchise Opportunity</a></li>
+          <li><a href="#reviews">Verified Reviews</a></li>
+          <li><a href="#contact">Centres & Hours</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Centres Open 7 Days</h5>
+        <div class="footer-hours">
+          <div class="hours-row">
+            <span>Mon – Fri</span>
+            <span>8:30 AM – 9:30 PM</span>
+          </div>
+          <div class="hours-row">
+            <span>Saturday</span>
+            <span>8:00 AM – 10:00 PM</span>
+          </div>
+          <div class="hours-row">
+            <span>Sunday</span>
+            <span>8:00 AM – 10:00 PM</span>
+          </div>
+        </div>
+        <button class="btn-primary w-100 mt-3" id="footerBookBtn">Book Priority Seat</button>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container bottom-content">
+        <p>&copy; 2026 MBA Hair Salon & Grooming Co. Pvt. Ltd. All rights reserved.</p>
+        <div class="legal-links">
+          <a href="#">Hygiene Certificate</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Franchise Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Dock -->
+  <div class="floating-dock" id="floatingDock">
+    <a href="https://wa.me/919820044820" target="_blank" rel="noopener" class="dock-btn dock-whatsapp" title="WhatsApp Concierge">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="dock-text">WhatsApp Us</span>
+    </a>
+    <button class="dock-btn dock-book" id="dockBookBtn" title="Instant Appointment Booking">
+      <i class="fa-solid fa-bolt"></i>
+      <span class="dock-text">Book Seat</span>
+    </button>
+    <button class="dock-btn dock-top" id="dockTopBtn" title="Back to Top" aria-label="Back to Top">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
+  </div>
+
+  <!-- ============================================== -->
+  <!-- MODAL: ONLINE BOOKING SYSTEM                   -->
+  <!-- ============================================== -->
+  <div class="modal-backdrop" id="bookingModalBackdrop">
+    <div class="booking-modal" id="bookingModal">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <div class="modal-badge"><i class="fa-solid fa-bolt"></i> ZERO WAIT BOOKING</div>
+          <h3 id="bookingModalHeading">Reserve Your Grooming Slot</h3>
+        </div>
+        <button class="modal-close" id="closeBookingModal" aria-label="Close modal">&times;</button>
+      </div>
+
+      <div class="booking-stepper">
+        <div class="step-node active" data-step="1">
+          <div class="step-num">1</div>
+          <span class="step-label">Package</span>
+        </div>
+        <div class="step-line"></div>
+        <div class="step-node" data-step="2">
+          <div class="step-num">2</div>
+          <span class="step-label">Barber</span>
+        </div>
+        <div class="step-line"></div>
+        <div class="step-node" data-step="3">
+          <div class="step-num">3</div>
+          <span class="step-label">Timing</span>
+        </div>
+        <div class="step-line"></div>
+        <div class="step-node" data-step="4">
+          <div class="step-num">4</div>
+          <span class="step-label">Details</span>
+        </div>
+      </div>
+
+      <!-- Step 1 -->
+      <div class="step-pane active" id="step1Pane">
+        <div class="step-instruction">
+          <h4>Select your package or service</h4>
+          <p>Fixed prices including GST. No hidden add-ons.</p>
+        </div>
+        
+        <div class="service-selector-categories" id="modalCategoryFilter">
+          <button class="pill-sm active" data-filter="all">All</button>
+          <button class="pill-sm" data-filter="combos">Combos</button>
+          <button class="pill-sm" data-filter="haircut">Cuts</button>
+          <button class="pill-sm" data-filter="color">Color</button>
+          <button class="pill-sm" data-filter="spa">Spa</button>
+        </div>
+
+        <div class="modal-services-list" id="modalServicesList"></div>
+
+        <div class="step-actions">
+          <div></div>
+          <button class="btn-primary" id="step1NextBtn" disabled>
+            <span>Next: Choose Barber</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="step-pane" id="step2Pane">
+        <div class="step-instruction">
+          <h4>Pick your preferred barber or stylist</h4>
+          <p>All barbers are certified with 5+ years of craft experience.</p>
+        </div>
+
+        <div class="stylist-options-grid" id="modalStylistGrid"></div>
+
+        <div class="step-actions">
+          <button class="btn-ghost" id="step2BackBtn"><i class="fa-solid fa-arrow-left"></i> Back</button>
+          <button class="btn-primary" id="step2NextBtn">
+            <span>Next: Pick Timing</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="step-pane" id="step3Pane">
+        <div class="step-instruction">
+          <h4>Choose date and arrival slot</h4>
+          <p>If you wait &gt;10 mins past your confirmed slot, next head massage is free!</p>
+        </div>
+
+        <div class="calendar-wrapper">
+          <div class="calendar-nav-header">
+            <span class="current-month-title" id="currentMonthYearDisplay">November 2026</span>
+            <div class="month-nav-btns">
+              <button class="cal-nav-btn" id="prevDayBtn"><i class="fa-solid fa-chevron-left"></i></button>
+              <button class="cal-nav-btn" id="nextDayBtn"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+          </div>
+          <div class="date-strip" id="dateStrip"></div>
+        </div>
+
+        <div class="time-slots-section">
+          <div class="slot-group-title"><i class="fa-regular fa-clock"></i> Available Slots Today</div>
+          <div class="slots-grid" id="slotsGrid"></div>
+        </div>
+
+        <div class="step-actions">
+          <button class="btn-ghost" id="step3BackBtn"><i class="fa-solid fa-arrow-left"></i> Back</button>
+          <button class="btn-primary" id="step3NextBtn" disabled>
+            <span>Next: Finalize</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="step-pane" id="step4Pane">
+        <div class="step-instruction">
+          <h4>Customer Details for WhatsApp Ticket</h4>
+          <p>We will send your slot pass and Google Maps directions to your phone.</p>
+        </div>
+
+        <div class="booking-summary-banner">
+          <div class="summary-service-title" id="summaryServiceTitle">The CEO Package</div>
+          <div class="summary-meta-row">
+            <span><i class="fa-solid fa-scissors"></i> <strong id="summaryStylist">Sameer Khan</strong></span>
+            <span><i class="fa-regular fa-calendar"></i> <strong id="summaryDate">Today, 2:30 PM</strong></span>
+            <span><i class="fa-solid fa-indian-rupee-sign"></i> <strong id="summaryPrice">₹599</strong></span>
+          </div>
+        </div>
+
+        <form id="bookingFinalForm" class="booking-final-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="clientName">Full Name *</label>
+              <input type="text" id="clientName" required placeholder="Aman Gupta">
+            </div>
+            <div class="form-group">
+              <label for="clientPhone">WhatsApp Number *</label>
+              <input type="tel" id="clientPhone" required placeholder="98XXXXXXXX">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="clientHairType">Preferred Centre</label>
+              <select id="clientHairType">
+                <option value="baner">Pune - Baner High St</option>
+                <option value="wakad">Pune - Wakad</option>
+                <option value="koramangala">Bengaluru - Koramangala</option>
+                <option value="indiranagar">Bengaluru - Indiranagar</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="clientNotes">Corporate / College Code</label>
+              <input type="text" id="clientNotes" placeholder="e.g. MBAPASS (20% off)">
+            </div>
+          </div>
+
+          <div class="form-checkbox">
+            <input type="checkbox" id="silentAppointmentCheck">
+            <label for="silentAppointmentCheck">
+              <strong>Request "Silent Cut" Mode</strong> — Zero small talk, pure focus and relaxation.
+            </label>
+          </div>
+
+          <div class="step-actions">
+            <button type="button" class="btn-ghost" id="step4BackBtn"><i class="fa-solid fa-arrow-left"></i> Back</button>
+            <button type="submit" class="btn-primary" id="confirmBookingBtn">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>Confirm & Send WhatsApp Pass</span>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Step 5: Success -->
+      <div class="step-pane" id="step5SuccessPane">
+        <div class="success-box text-center">
+          <div class="success-check-icon">
+            <i class="fa-solid fa-circle-check"></i>
+          </div>
+          <h3>Slot Confirmed! You're All Set!</h3>
+          <p class="success-text">Your priority pass has been generated. Show this code or your WhatsApp message at the reception counter.</p>
+
+          <div class="confirmed-ticket-card" id="confirmedTicketCard"></div>
+
+          <div class="success-actions">
+            <button class="btn-primary" id="doneBookingBtn">Awesome, Got It</button>
+            <button class="btn-secondary" id="addToCalBtn">
+              <i class="fa-regular fa-calendar-plus"></i>
+              Add to Calendar (.ics)
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================== -->
+  <!-- MODAL: HAIR ROI DIAGNOSTIC                     -->
+  <!-- ============================================== -->
+  <div class="modal-backdrop" id="quizModalBackdrop">
+    <div class="quiz-modal">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <div class="modal-badge"><i class="fa-solid fa-calculator"></i> 45-SECOND DIAGNOSTIC</div>
+          <h3>Find Your Optimum Grooming Combo</h3>
+        </div>
+        <button class="modal-close" id="closeQuizModal">&times;</button>
+      </div>
+
+      <div class="quiz-body" id="quizBody">
+        <div class="quiz-progress-bar">
+          <div class="quiz-progress-fill" id="quizProgressFill" style="width: 25%;"></div>
+        </div>
+        <div id="quizQuestionContainer"></div>
+        <div id="quizResultContainer" style="display: none;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================== -->
+  <!-- MODAL: MY APPOINTMENTS DRAWER                  -->
+  <!-- ============================================== -->
+  <div class="modal-backdrop" id="myAppointmentsBackdrop">
+    <div class="my-appointments-modal">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <div class="modal-badge"><i class="fa-solid fa-ticket"></i> PASSES</div>
+          <h3>Your Booked Slots</h3>
+        </div>
+        <button class="modal-close" id="closeMyAppointmentsModal">&times;</button>
+      </div>
+      <div class="my-appointments-body">
+        <div id="myAppointmentsList"></div>
+        <div class="my-appointments-footer">
+          <button class="btn-primary w-100" id="bookAnotherBtn">
+            <i class="fa-solid fa-plus"></i> Book Another Slot
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
